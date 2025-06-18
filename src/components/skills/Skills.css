@@ -1,0 +1,85 @@
+/************ Skills Section CSS ************/
+.skills-section {
+  padding: 80px 20px;
+  background-image: url('src/assets/img/color-sharp.png');
+  background-position: top-center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+.skills-heading {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.skills-icon {
+  color: rgba(231, 84, 128, 1);
+}
+.skills-description {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+/************ Skill Card ************/
+.skill-card {
+  background: #151515;
+  padding: 30px 25px;
+  border-radius: 20px;
+  flex: 1 1 280px;
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  color: #eee;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px rgba(255, 20, 147, 0.7); /* Pink glow */
+  cursor: pointer;
+}
+
+.icon-wrapper {
+  font-size: 36px;
+  color: #00bfff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.skill-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.skill-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.skill-list li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #bbbbbb;
+}
+
+.tick-icon {
+  color: #efa92a;
+  margin-right: 10px;
+  font-size: 18px;
+}

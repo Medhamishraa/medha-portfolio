@@ -1,0 +1,44 @@
+[
+    {
+      "icon": "FaLaptopCode",
+      "title": "Development",
+      "skills": [
+        "C | C++ | Python",
+        "HTML | CSS | JavaScript",
+        "ReactJS | NodeJS | Redux | Flask",
+        "SQL | MongoDB"
+      ]
+    },
+    {
+      "icon": "FaChartLine",
+      "title": "Data Science",
+      "skills": [
+        "Python (Data Analysis)",
+        "Python ML Stack & Libraries",
+        "R Programming | R Studio",
+        "TensorFlow | Keras | NLTK",
+        "Power BI"
+      ]
+    },
+    {
+      "icon": "FaCogs",
+      "title": "Other Tools",
+      "skills": [
+        "Figma | Canva | WordPress",
+        "Overleaf (LaTeX) | Office 365",
+        "Windows | MacOS | Android",
+        "EdgeImpulse (Arduino Simulation)"
+      ]
+    },
+    {
+      "icon": "FaPeopleCarry",
+      "title": "Soft Skills",
+      "skills": [
+        "Leadership | Event Management",
+        "Content Writing: Technical | Social",
+        "Public Speaking",
+        "Time Management | Project Planning"
+      ]
+    }
+  ]
+  

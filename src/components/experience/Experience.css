@@ -1,0 +1,115 @@
+.experience-section {
+    padding: 60px 20px;
+    background-color: #000;
+    text-align: center;
+    background-image: url('src/assets/img/color-sharp.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    color: white;
+    font-family: 'Centra', sans-serif !important;
+  }
+  
+  .section-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #B8B8B8;
+  }
+  
+  .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards in first row */
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .experience-card {
+    background-color: rgba(33, 33, 33, 0.9);
+    padding: 20px;
+    margin: auto;
+    border-radius: 12px;
+    width: 400px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(255, 0, 64, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(255, 20, 147, 0.7);
+    cursor: pointer;
+  }
+  
+  .experience-header {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  .experience-header h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  
+  .date {
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .organization p {
+    margin: 5px 0 0;
+    color: #bbb;
+  }
+  
+  .organization small {
+    color: #888;
+  }
+  
+  .divider {
+    margin: 10px 0;
+    height: 2px;
+    background: rgba(231, 84, 128, 1);
+  }
+  
+  .projects {
+    margin-top: 10px;
+  }
+  
+  .project-tags {
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  
+  .project-tag {
+    border: 1px solid #999;
+    padding: 4px 10px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    font-size: 0.85rem;
+    color: white;
+  }
+  
+  /* Responsive layout for two cards on second row */
+  @media (max-width: 1000px) {
+    .experience-grid {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+  }
+  
