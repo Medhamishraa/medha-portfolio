@@ -67,7 +67,7 @@ export const Banner = () => {
                     With a specialization in Data Science, I love combining machine learning with modern frontend development to create impactful solutions. My projects span across areas like AI-powered healthcare tools, travel booking UIs, microservices architectures, and portfolio websites using React, Vite, Flask, and TensorFlow. </p>
 
                     <p className="desc">
-                        When I’m not coding, I enjoy reading fiction and update myself on pop-culture, writing technical content, and brewing coffee for my breaks.
+                        When I’m not coding, I enjoy reading fiction and update myself on pop-culture, writing technical content, and brewing coffee for my breaks!
                         Let’s connect and create something amazing together!
                   </p>
                   <button onClick={() => console.log('connect')}>
