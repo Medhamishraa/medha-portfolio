@@ -1,7 +1,7 @@
 import React from "react";
 import { FaTools, FaLaptopCode, FaChartLine, FaCogs, FaPeopleCarry } from "react-icons/fa";
 import { BsCheckCircleFill } from "react-icons/bs";
-import "./skills.css";
+import "./Skills.css";
 import skillsData from "../../data/skills.json";
 
 const iconMap = {
