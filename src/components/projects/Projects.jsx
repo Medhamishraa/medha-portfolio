@@ -1,8 +1,9 @@
+import { useState } from 'react';
 import { motion, useMotionValue, useReducedMotion, useSpring } from 'framer-motion';
-import { FiArrowUpRight, FiExternalLink, FiFileText, FiGithub, FiLayers } from 'react-icons/fi';
-import { moreProjects, projects } from '../../data/content';
+import { FiExternalLink, FiFileText, FiGithub, FiLayers } from 'react-icons/fi';
+import { projectCategories, projects } from '../../data/content';
 import { Section, SectionTitle } from '../fx/Section';
-import { fadeUp } from '../../lib/motion';
+import { fadeUp, stagger, viewportOnce } from '../../lib/motion';
 
 function TiltCard({ children }) {
   const reduce = useReducedMotion();
@@ -77,13 +78,15 @@ function ProjectCard({ project }) {
           <p className="mt-0.5 text-sm font-medium text-pink-600 dark:text-pink-400">{project.tag}</p>
           <p className="mt-3 text-[15px] leading-relaxed text-muted">{project.description}</p>
 
-          <div className="mt-4 flex flex-wrap gap-2">
-            {project.tech.map((t) => (
-              <span key={t} className="chip">
-                {t}
-              </span>
-            ))}
-          </div>
+          {project.tech?.length > 0 && (
+            <div className="mt-4 flex flex-wrap gap-2">
+              {project.tech.map((t) => (
+                <span key={t} className="chip">
+                  {t}
+                </span>
+              ))}
+            </div>
+          )}
 
           <div className="mt-6 flex flex-wrap gap-3 pt-1">
             {project.github && (
@@ -130,6 +133,9 @@ function ProjectCard({ project }) {
 }
 
 export const Projects = () => {
+  const [active, setActive] = useState('technical');
+  const filtered = projects.filter((p) => p.categories.includes(active));
+
   return (
     <Section id="projects">
       <SectionTitle
@@ -139,39 +145,44 @@ export const Projects = () => {
         blurb="From computer vision and ML to full-stack builds and data case studies, spanning national hackathons and coursework."
       />
 
-      <div className="grid gap-8 md:grid-cols-2">
-        {projects.map((p) => (
+      <motion.div variants={fadeUp} className="mb-10 flex flex-wrap gap-2">
+        {projectCategories.map((c) => {
+          const isActive = c.key === active;
+          const count = projects.filter((p) => p.categories.includes(c.key)).length;
+          return (
+            <button
+              key={c.key}
+              type="button"
+              onClick={() => setActive(c.key)}
+              aria-pressed={isActive}
+              className={`rounded-full px-5 py-2 text-sm font-semibold transition-colors ${
+                isActive
+                  ? 'text-white shadow-card'
+                  : 'border border-line bg-surface text-muted hover:border-pink-400 hover:text-pink-500'
+              }`}
+              style={isActive ? { backgroundImage: 'var(--grad)' } : undefined}
+            >
+              {c.label}
+              <span className={`ml-2 text-xs ${isActive ? 'text-white/80' : 'text-muted/70'}`}>{count}</span>
+            </button>
+          );
+        })}
+      </motion.div>
+
+      <motion.div
+        key={active}
+        variants={stagger}
+        initial="hidden"
+        whileInView="show"
+        viewport={viewportOnce}
+        className="grid gap-8 md:grid-cols-2"
+      >
+        {filtered.map((p) => (
           <motion.div key={p.title} variants={fadeUp} className="h-full">
             <ProjectCard project={p} />
           </motion.div>
         ))}
-      </div>
-
-      {moreProjects.length > 0 && (
-        <motion.div variants={fadeUp} className="mt-8">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted">More case studies</p>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {moreProjects.map((m) => (
-              <motion.a
-                key={m.title}
-                href={m.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ y: -3 }}
-                className="card group flex items-center justify-between gap-4 p-5"
-              >
-                <span>
-                  <span className="font-display font-bold">{m.title}</span>
-                  <span className="mt-0.5 block text-sm text-muted">{m.blurb}</span>
-                </span>
-                <span className="flex shrink-0 items-center gap-1 text-sm font-semibold text-pink-600 transition-transform group-hover:translate-x-0.5 dark:text-pink-400">
-                  {m.linkLabel} <FiArrowUpRight />
-                </span>
-              </motion.a>
-            ))}
-          </div>
-        </motion.div>
-      )}
+      </motion.div>
 
       <motion.p variants={fadeUp} className="mt-10 text-center text-muted">
         More experiments live on{' '}

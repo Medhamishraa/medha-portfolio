@@ -41,6 +41,7 @@ import {
   FiTarget,
   FiTerminal,
   FiTrendingUp,
+  FiUsers,
   FiZap,
 } from 'react-icons/fi';
 import {
@@ -73,9 +74,11 @@ import {
 import signbridgeImg from '../assets/img/project-img1.png';
 import bioactivityImg from '../assets/img/project-img5.png';
 import ernakulamImg from '../assets/img/project-img6.png';
+import bearingImg from '../assets/img/project-img7.png';
 import travelImg from '../assets/img/project-img8.png';
 import fraudImg from '../assets/img/project-img9.png';
 import evMarketImg from '../assets/img/project-img10.png';
+import muthootImg from '../assets/img/project-img11.png';
 
 // --- Identity ---------------------------------------------------------------
 
@@ -281,11 +284,20 @@ export const experience = [
 
 // --- Projects -----------------------------------------------------------------
 
+// Category keys: 'technical' | 'hackathon' | 'non-tech'. A project can belong to
+// more than one, mirroring the tab distribution of the original portfolio.
+export const projectCategories = [
+  { key: 'technical', label: 'Technical Projects' },
+  { key: 'hackathon', label: 'Hackathons' },
+  { key: 'non-tech', label: 'Non-Tech Projects' },
+];
+
 export const projects = [
   {
     title: 'SignBridge',
     tag: 'Sign Language Learning Game',
     period: 'Jan – Apr 2025',
+    categories: ['technical'],
     Icon: FaSignLanguage,
     image: signbridgeImg,
     description:
@@ -298,6 +310,7 @@ export const projects = [
     title: 'Bioactivity Prediction App',
     tag: 'ML for drug discovery',
     period: 'Mar 2025',
+    categories: ['technical'],
     Icon: FaFlask,
     image: bioactivityImg,
     description:
@@ -310,6 +323,7 @@ export const projects = [
     title: 'Ernakulam · The Online Doctor',
     tag: 'AI symptom triage',
     period: '2024',
+    categories: ['technical', 'hackathon'],
     badge: 'Smart India Hackathon',
     Icon: FiActivity,
     image: ernakulamImg,
@@ -323,6 +337,7 @@ export const projects = [
     title: 'Travel With TBO',
     tag: 'Multimodal hotel search',
     period: '2024',
+    categories: ['technical', 'hackathon'],
     badge: 'Hackathon',
     Icon: FiSearch,
     image: travelImg,
@@ -336,6 +351,7 @@ export const projects = [
     title: 'Credit Card Fraud Detection',
     tag: 'ML classification',
     period: '2024',
+    categories: ['technical', 'hackathon'],
     Icon: FiShield,
     image: fraudImg,
     description:
@@ -348,6 +364,7 @@ export const projects = [
     title: 'Indian EV Market Analysis',
     tag: 'Data analysis & strategy',
     period: '2025',
+    categories: ['non-tech'],
     badge: 'BrAINWARS 2025',
     Icon: FiBarChart2,
     image: evMarketImg,
@@ -357,21 +374,31 @@ export const projects = [
     report: 'https://drive.google.com/file/d/1U9xZENK9VKbg9OfSGDs2cCABM4xks627/view?usp=sharing',
     live: '',
   },
-];
-
-// Lighter, link-only entries shown under the main project grid.
-export const moreProjects = [
   {
     title: 'Muthoot-eers',
-    blurb: 'Business case study on transforming branch engagement experience.',
-    link: 'https://drive.google.com/file/d/1i6Ca1SsYcdVFB-BJGyNqjYwH63mE6uvC/view?usp=sharing',
-    linkLabel: 'View deck',
+    tag: 'Branch engagement case study',
+    period: '2024',
+    categories: ['non-tech'],
+    Icon: FiUsers,
+    image: muthootImg,
+    description:
+      'A business case study reimagining the in-branch customer experience, streamlining engagement, wait-times, and cross-sell touchpoints.',
+    tech: ['Business Strategy', 'UX', 'Presentation'],
+    report: 'https://drive.google.com/file/d/1i6Ca1SsYcdVFB-BJGyNqjYwH63mE6uvC/view?usp=sharing',
+    live: '',
   },
   {
     title: 'Energy-Efficient Bearing Design',
-    blurb: 'Brushless DC (BLDC) motor design using eGaN FETs for higher efficiency.',
-    link: 'https://drive.google.com/file/d/1blaf62mUV95cjeesVc0KF9ZlV7QsVmut/view?usp=sharing',
-    linkLabel: 'View report',
+    tag: 'Hardware design study',
+    period: '2024',
+    categories: ['non-tech', 'hackathon'],
+    Icon: FiCpu,
+    image: bearingImg,
+    description:
+      'A hardware design study for an energy-efficient brushless DC (BLDC) motor built around eGaN FETs for higher switching efficiency.',
+    tech: ['BLDC Motor', 'eGaN FETs', 'Efficiency'],
+    report: 'https://drive.google.com/file/d/1blaf62mUV95cjeesVc0KF9ZlV7QsVmut/view?usp=sharing',
+    live: '',
   },
 ];
 
