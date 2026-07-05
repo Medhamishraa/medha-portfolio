@@ -25,3 +25,6 @@ dist-ssr
 
 # Backup archives
 *.zip
+
+# Finder duplicates
+* copy.*

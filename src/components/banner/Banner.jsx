@@ -134,10 +134,10 @@ export const Banner = () => {
             <div className="overflow-hidden rounded-[2rem]" style={{ backgroundImage: 'var(--grad)' }}>
               {imgOk ? (
                 <img
-                  src="/medha.jpg"
+                  src="/medha.jpeg"
                   alt="Portrait of Medha Mishra"
                   onError={() => setImgOk(false)}
-                  className="aspect-[4/5] w-full object-cover"
+                  className="aspect-[4/5] w-full object-cover object-bottom"
                 />
               ) : (
                 <div className="grid aspect-[4/5] w-full place-items-center">
