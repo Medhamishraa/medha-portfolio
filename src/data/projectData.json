@@ -1,0 +1,102 @@
+[
+    {
+      "title": "SignBridge",
+      "description": "MERN Stack | Deep Learning | Computer Vision",
+      "imgUrl": "project-img1.png",
+      "link": "https://github.com/Medhamishraa/signbridge",
+      "linkType": "github",
+      "tech": ["React", "MongoDB", "TensorFlow", "API"],
+      "categories": ["technical"]
+    },
+    {
+      "title": "The Sky's Secret Channel",
+      "description": "Simulation | Regression | HTML & CSS",
+      "imgUrl": "project-img2.png",
+      "link": "https://github.com/Medhamishraa/NokiaIdeathon",
+      "linkType": "github",
+      "tech": ["HTML", "CSS", "Python", "API"],
+      "categories": ["technical", "hackathon"]
+    },
+    {
+      "title": "MyntraOnBudget",
+      "description": "HTML & CSS | Machine Learning",
+      "imgUrl": "project-img3.png",
+      "link": "https://github.com/Medhamishraa/myntraonbudget",
+      "linkType": "github",
+      "tech": ["HTML", "CSS", "Python"],
+      "categories": ["hackathon", "technical"]
+    },
+    {
+      "title": "Portfolio Website",
+      "description": "React.js | EmailJS",
+      "imgUrl": "project-img4.png",
+      "link": "https://github.com/yourusername/portfolio",
+      "linkType": "github",
+      "tech": ["React"],
+      "categories": ["technical"]
+    },
+    {
+      "title": "Bioactivity Prediction",
+      "description": "Streamlit | Machine Learning",
+      "imgUrl": "project-img5.png",
+      "link": "https://github.com/Medhamishraa/bioactivity_drug_prediction",
+      "linkType": "github",
+      "tech": ["Python"],
+      "categories": ["technical"]
+    },
+    {
+      "title": "Ernakulam, The Online Doctor",
+      "description": "HTML & CSS | Machine Learning",
+      "imgUrl": "project-img6.png",
+      "link": "https://github.com/Savaam-ernakulam/SIH_INTERNAL_ROUND_1_ERNAKULAM",
+      "linkType": "github",
+      "tech": ["HTML", "Python", "TensorFlow", "API"],
+      "categories": ["technical", "hackathon"]
+    },
+    {
+      "title": "Energy Efficient Bearing Design",
+      "description": "Brush-less DC (BLDC) Motor with eGaN FETs",
+      "imgUrl": "project-img7.png",
+      "link": "https://drive.google.com/file/d/1blaf62mUV95cjeesVc0KF9ZlV7QsVmut/view?usp=sharing",
+      "linkType": "drive",
+      "tech": [],
+      "categories": ["non-tech", "hackathon"]
+    },
+    {
+      "title": "Travel With TBO",
+      "description": "Smart, fast hotel search using voice, image, and chat",
+      "imgUrl": "project-img8.png",
+      "link": "https://github.com/Medhamishraa/travel_with_tbo",
+      "linkType": "github",
+      "tech": ["HTML", "CSS", "Python", "NLTK", "API"],
+      "categories": ["technical", "hackathon"]
+    },
+    {
+      "title": "Credit Card Fraud Detection",
+      "description": "Safeguarding Your Finances with Intelligent Insights",
+      "imgUrl": "project-img9.png",
+      "link": "https://github.com/Medhamishraa/ML_Error404",
+      "linkType": "github",
+      "tech": ["Python"],
+      "categories": ["technical", "hackathon"]
+    },
+    {
+      "title": "Analysing the Indian EV Market",
+      "description": "Analysing the Indian EV Market for BrAINWARS 2025",
+      "imgUrl": "project-img10.png",
+      "link": "https://drive.google.com/file/d/1U9xZENK9VKbg9OfSGDs2cCABM4xks627/view?usp=sharing",
+      "linkType": "drive",
+      "tech": [],
+      "categories": ["non-tech"]
+    },
+    {
+      "title": "Muthoot-eers",
+      "description": "Transforming Branch Engagement Experience",
+      "imgUrl": "project-img11.png",
+      "link": "https://drive.google.com/file/d/1i6Ca1SsYcdVFB-BJGyNqjYwH63mE6uvC/view?usp=sharing",
+      "linkType": "drive",
+      "tech": [],
+      "categories": ["non-tech"]
+    }
+  ]
+  

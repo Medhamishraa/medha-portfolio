@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>Medha Mishra | Software Engineer</title>
+    <meta
+      name="description"
+      content="Medha Mishra is a software engineer and ML/AI developer at NSUT Delhi, building data-driven products with React, FastAPI, AWS, and computer vision."
+    />
+
+    <!-- TODO after deploy: replace medha-portfolio.vercel.app with your live domain -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://medha-portfolio.vercel.app/" />
+    <meta property="og:title" content="Medha Mishra | Software Engineer" />
+    <meta
+      property="og:description"
+      content="CS undergrad at NSUT Delhi building data-driven products, from computer-vision apps to $100M-scale platforms."
+    />
+    <meta property="og:image" content="https://medha-portfolio.vercel.app/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Medha Mishra | Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="CS undergrad at NSUT Delhi building data-driven products, from computer-vision apps to $100M-scale platforms."
+    />
+    <meta name="twitter:image" content="https://medha-portfolio.vercel.app/og-image.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      // set theme before first paint to avoid a flash
+      try {
+        var t =
+          localStorage.getItem('theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.classList.toggle('dark', t === 'dark');
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
